@@ -159,6 +159,13 @@ document.addEventListener('DOMContentLoaded', function() {
             date: "5 juni 2025",
             description: "Ontdek waarom een hoge pagespeed en SEO-score essentieel zijn voor jouw website. KHCustomWeb in Venlo legt uit hoe je met slimme optimalisaties sneller, toegankelijker en beter vindbaar wordt.",
             link: "pagespeed-seo-optimalisatie.html"
+        },
+      {
+            category: "Algemeen / Over KHCustomWeb",
+            title: "Voor Wie is KHCustomWeb? En Waarom Niet Voor Iedereen",
+            date: "6 juni 2025",
+            description: "Ontdek waarom KHCustomWeb niet voor iedereen is",
+            link: "voor-wie-khcustomweb.html"
         }
     ];
 
