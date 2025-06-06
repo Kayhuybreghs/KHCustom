@@ -1,7 +1,4 @@
 {
-  "rewrites": [
-    { "source": "/site.webmanifest", "destination": "/site.webmanifest" }
-  ],
   "redirects": [
     {
       "source": "/index.html",
