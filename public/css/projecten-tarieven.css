@@ -309,8 +309,8 @@
     display: flex;
     align-items: center;
     transition: all var(--transition-normal);
+    -webkit-user-select: none; 
     user-select: none;
-   -webkit-user-select: none; 
 }
 
 .checkbox-container:hover {
