@@ -1,7 +1,7 @@
 User-agent: *
 Allow: /
 
-Sitemap: https://www.khcustomweb.com/sitemap.xml
+Sitemap: https://www.khcustomweb.nl/sitemap.xml
 
 # Disallow specific files
 Disallow: /*.pdf$
