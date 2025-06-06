@@ -24,21 +24,6 @@
     transform: scale(1.1);
 }
 
-
-
-/* Animation keyframes for floating */
-@keyframes float-animation-y {
-    0% {
-        transform: translateY(0);
-    }
-    50% {
-        transform: translateY(-10px);
-    }
-    100% {
-        transform: translateY(0);
-    }
-}
-
 .hero .container {
     display: grid;
     grid-template-columns: 1fr 1fr;
