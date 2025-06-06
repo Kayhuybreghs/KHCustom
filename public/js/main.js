@@ -226,8 +226,8 @@ document.addEventListener('DOMContentLoaded', function() {
         font-size: 2.2rem;
         font-weight: 700;
         color: var(--color-dark);
-        user-select: none;
         -webkit-user-select: none;
+        user-select: none;
     }
 
     .logo-text .highlight {
