@@ -1,24 +1,4 @@
 {
-  "redirects": [
-    {
-      "source": "/index.html",
-      "destination": "/",
-      "permanent": true
-    },
-    {
-      "source": "/(.*)",
-      "has": [
-        {
-          "type": "host",
-          "value": "khcustomweb.com"
-        }
-      ],
-      "destination": "https://www.khcustomweb.nl/$1",
-      "permanent": true
-    }
-  ]
-}
-{
   "rewrites": [
     { "source": "/site.webmanifest", "destination": "/site.webmanifest" }
   ],
