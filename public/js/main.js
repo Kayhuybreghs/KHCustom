@@ -227,7 +227,7 @@ document.addEventListener('DOMContentLoaded', function() {
         font-weight: 700;
         color: var(--color-dark);
         user-select: none;
-        -webkit-user-select
+        -webkit-user-select: none;
     }
 
     .logo-text .highlight {
