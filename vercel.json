@@ -10,10 +10,10 @@
       "has": [
         {
           "type": "host",
-          "value": "201-two.vercel.app"
+          "value": "khcustomweb.com"
         }
       ],
-      "destination": "https://www.khcustomweb.com/$1",
+      "destination": "https://www.khcustomweb.nl/$1",
       "permanent": true
     }
   ]
