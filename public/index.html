@@ -8,12 +8,47 @@
     <meta name="author" content="Kay Huybreghs">
     
     <title>KHCustomWeb - Betaalbare websites voor ondernemers in Venlo</title>
+     
+    <!-- Inlined critical CSS -->
+    <style>
+    /* normalize.css */
+    html{line-height:1.15;-webkit-text-size-adjust:100%}body{margin:0}main{display:block}h1{font-size:2em;margin:.67em 0}hr{box-sizing:content-box;height:0;overflow:visible}pre{font-family:monospace,monospace;font-size:1em}a{background-color:transparent}abbr[title]{border-bottom:none;text-decoration:underline;text-decoration:underline dotted}b,strong{font-weight:bolder}code,kbd,samp{font-family:monospace,monospace;font-size:1em}small{font-size:80%}sub,sup{font-size:75%;line-height:0;position:relative;vertical-align:baseline}sub{bottom:-.25em}sup{top:-.5em}img{border-style:none}button,input,optgroup,select,textarea{font-family:inherit;font-size:100%;line-height:1.15;margin:0}button,input{overflow:visible}button,select{text-transform:none}button,[type="button"],[type="reset"],[type="submit"]{-webkit-appearance:button}button::-moz-focus-inner,[type="button"]::-moz-focus-inner,[type="reset"]::-moz-focus-inner,[type="submit"]::-moz-focus-inner{border-style:none;padding:0}button:-moz-focusring,[type="button"]:-moz-focusring,[type="reset"]:-moz-focusring,[type="submit"]:-moz-focusring{outline:1px dotted ButtonText}fieldset{padding:.35em .75em .625em}legend{box-sizing:border-box;color:inherit;display:table;max-width:100%;padding:0;white-space:normal}progress{vertical-align:baseline}textarea{overflow:auto}[type="checkbox"],[type="radio"]{box-sizing:border-box;padding:0}[type="number"]::-webkit-inner-spin-button,[type="number"]::-webkit-outer-spin-button{height:auto}[type="search"]{-webkit-appearance:textfield;outline-offset:-2px}[type="search"]::-webkit-search-decoration{-webkit-appearance:none}::-webkit-file-upload-button{-webkit-appearance:button;font:inherit}details{display:block}summary{display:list-item}template{display:none}[hidden]{display:none}
+
+    /* main.css - critical parts */
+    :root{--color-primary:#FF6B00;--animation-duration:400ms;--animation-timing:cubic-bezier(0.4,0,0.2,1);--color-primary-dark:#E05E00;--color-primary-light:#FF8A33;--color-primary-alpha:rgba(255,107,0,0.1);--color-secondary:#FFBB10;--color-secondary-dark:#E0A000;--color-secondary-light:#FFD257;--color-dark:#1A1A1A;--color-dark-2:#333333;--color-dark-3:#4D4D4D;--color-light:#FFFFFF;--color-light-2:#F5F5F5;--color-light-3:#EBEBEB;--color-gray:#777777;--color-gray-light:#AAAAAA;--color-success:#2ECC71;--color-warning:#F1C40F;--color-error:#E74C3C;--font-family:Inter,system-ui,-apple-system,BlinkMacSystemFont,'Segoe UI',Roboto,Oxygen,Ubuntu,Cantarell,'Open Sans','Helvetica Neue',sans-serif;--font-size-base:16px;--line-height-body:1.5;--line-height-heading:1.2;--spacing-xs:4px;--spacing-sm:8px;--spacing-md:16px;--spacing-lg:24px;--spacing-xl:32px;--spacing-xxl:48px;--spacing-xxxl:64px;--border-radius-sm:4px;--border-radius-md:8px;--border-radius-lg:16px;--border-radius-full:9999px;--shadow-sm:0 2px 4px rgba(0,0,0,0.05);--shadow-md:0 4px 8px rgba(0,0,0,0.1);--shadow-lg:0 8px 16px rgba(0,0,0,0.1);--shadow-xl:0 16px 32px rgba(0,0,0,0.1);--transition-fast:0.15s ease;--transition-normal:0.25s ease;--transition-slow:0.4s ease;--container-max-width:1200px;--container-padding:var(--spacing-md)}
     
- <!-- Load CSS synchronously to prevent FOUC -->
-<link rel="stylesheet" href="/css/normalize.css">
-<link rel="stylesheet" href="/css/main.css">
-<link rel="stylesheet" href="/css/home.css">
-<link rel="stylesheet" href="/css/animations.css">
+    #site-header{position:fixed;top:0;left:0;width:100%;background-color:transparent;z-index:1000;padding:var(--spacing-md) 0;transition:all 0.3s ease}#site-header.scrolled{background-color:var(--color-light);box-shadow:var(--shadow-sm)}#site-header.hidden{transform:translateY(-100%)}#site-header .container{display:flex;justify-content:space-between;align-items:center}.logo{display:flex;align-items:center;font-weight:700;color:var(--color-dark);transition:font-size 0.3s ease}@media (min-width:769px){.logo{font-size:1rem}}@media (max-width:768px){.logo{font-size:1.5rem}#site-header{background-color:var(--color-light);box-shadow:var(--shadow-sm)}}.logo-text{color:var(--color-dark)}.highlight{color:var(--color-primary)}
+    
+    @media (prefers-reduced-motion:reduce){*{animation-duration:0.01ms !important;animation-iteration-count:1 !important;transition-duration:0.01ms !important;scroll-behavior:auto !important}}
+    
+    .animate-on-scroll{opacity:0;transform:translateY(20px);transition:opacity var(--animation-duration) var(--animation-timing),transform var(--animation-duration) var(--animation-timing);will-change:opacity,transform}.animate-on-scroll.visible{opacity:1;transform:translateY(0)}@media (hover:none) and (pointer:coarse){.animate-on-scroll{transform:translateY(30px)}.animate-on-scroll.visible{transform:translateY(0)}}@media (hover:none){.demo-feature:hover,.timeline-step:hover,.feature:hover,.tech-item:hover,.social-link:hover{transform:none}}
+    
+    *{box-sizing:border-box;margin:0;padding:0}html{font-size:var(--font-size-base);scroll-behavior:smooth}body{font-family:var(--font-family);line-height:var(--line-height-body);color:var(--color-dark);background-color:var(--color-light);overflow-x:hidden}img{max-width:100%;height:auto;display:block}a{color:var(--color-primary);text-decoration:none;transition:color var(--transition-fast)}a:hover{color:var(--color-primary-dark)}ul,ol{list-style:none}
+    
+    h1,h2,h3,h4,h5,h6{margin:0 0 var(--spacing-md);font-weight:700;line-height:var(--line-height-heading);color:var(--color-dark)}h1{font-size:2.5rem;margin-bottom:var(--spacing-lg)}h2{font-size:2rem;margin-bottom:var(--spacing-lg)}h3{font-size:1.5rem}h4{font-size:1.25rem}p{margin-bottom:var(--spacing-md)}
+    
+    .container{width:100%;max-width:var(--container-max-width);margin:0 auto;padding:0 var(--container-padding)}
+    
+    .btn{display:inline-flex;align-items:center;justify-content:center;padding:var(--spacing-sm) var(--spacing-lg);border-radius:var(--border-radius-md);font-weight:600;font-size:1rem;text-align:center;cursor:pointer;transition:all var(--transition-normal);text-decoration:none;border:none;outline:none}.btn-primary{background-color:var(--color-primary);color:var(--color-light)}.btn-primary:hover{background-color:var(--color-primary-dark);color:var(--color-light);transform:translateY(-2px);box-shadow:var(--shadow-md)}.btn-secondary{background-color:var(--color-light);color:var(--color-dark);border:1px solid var(--color-light-3)}.btn-secondary:hover{background-color:var(--color-light-2);color:var(--color-dark);transform:translateY(-2px);box-shadow:var(--shadow-sm)}.arrow{margin-left:var(--spacing-xs);transition:transform var(--transition-normal)}.btn:hover .arrow{transform:translateX(4px)}
+    
+    .main-nav{display:flex;align-items:center}.nav-menu{display:flex;gap:var(--spacing-xl)}.nav-menu a{color:var(--color-dark);font-weight:500;position:relative}.nav-menu a:hover,.nav-menu a.active{color:var(--color-primary)}.nav-menu a::after{content:'';position:absolute;left:0;bottom:-6px;width:0;height:2px;background-color:var(--color-primary);transition:width var(--transition-normal)}.nav-menu a:hover::after,.nav-menu a.active::after{width:100%}.mobile-menu-button{display:none;flex-direction:column;justify-content:space-between;width:24px;height:18px;background:transparent;border:none;cursor:pointer}.mobile-menu-button span{width:100%;height:2px;background-color:var(--color-dark);transition:all var(--transition-normal)}
+    
+    /* home.css - critical parts */
+    .hero{min-height:100vh;position:relative;overflow:hidden;background:linear-gradient(135deg,#FFF5EB 0%,#FFE4CC 100%,#FFE4CC 100%);margin-bottom:-50px;display:flex;align-items:center;padding-top:60px}.hero::after{content:'';position:absolute;left:0;bottom:-1px;width:100%;height:150px;background-image:url("data:image/svg+xml,%3Csvg viewBox='0 0 1200 120' xmlns='http://www.w3.org/2000/svg' preserveAspectRatio='none'%3E%3Cpath d='M321.39 56.44c58-10.79 114.16-30.13 172-41.86 82.39-16.72 168.19-17.73 250.45-.39C823.78 31 906.67 72 985.66 92.83c70.05 18.48 146.53 26.09 214.34 3V0H0v27.35a600.21 600.21 0 00321.39 29.09z' fill='%23ffffff'/%3E%3C/path%3E%3C/svg%3E");background-size:cover;background-repeat:no-repeat;background-position:center;transform:scale(1.1)}.hero-figure{position:absolute;top:0;left:50%;transform:translateX(-50%);width:200px;height:200px;background:rgba(255,107,0,0.1);clip-path:polygon(25% 0%,75% 0%,100% 50%,75% 100%,25% 100%,0% 50%);z-index:0;transform:translateX(-50%) rotate(20deg)}.hero .container{display:grid;grid-template-columns:1fr 1fr;gap:var(--spacing-xxl);align-items:center;min-height:100vh;padding-top:0}.hero-content{z-index:1;padding-top:0}.hero h1{font-size:4rem;line-height:1.1;margin-bottom:var(--spacing-lg)}.hero p{font-size:1.25rem;color:var(--color-dark-2);margin-bottom:var(--spacing-xl);max-width:600px}.location{position:relative;display:inline-block;color:inherit}.location::after{content:'';position:absolute;left:0;bottom:2px;width:100%;height:8px;background-color:rgba(255,107,0,0.2);z-index:-1}.cta-buttons{display:flex;gap:var(--spacing-lg);flex-wrap:wrap}.cta-buttons .btn{padding:var(--spacing-md) var(--spacing-xl);font-size:1.1rem;min-width:200px}.hero-animation{position:relative;height:600px;width:100%}
+    
+    @media (max-width:1024px){.hero .container{gap:var(--spacing-lg);padding:0 var(--spacing-xl)}}
+    
+    @media (max-width:768px){.hero{min-height:100vh;padding:60px 0 100px}.hero::after{height:100px}.hero-figure{width:250px;height:250px;top:50%;left:auto;right:-80px;transform:translateY(-50%) rotate(45deg);opacity:0.15;background:rgba(255,107,0,0.3)}.hero .container{grid-template-columns:1fr;min-height:auto;padding:var(--spacing-xl)}.hero-content{text-align:center;position:relative;z-index:1;padding:0}.hero h1{font-size:2.2rem;line-height:1.3;margin-bottom:var(--spacing-xl)}.hero p{font-size:1.1rem;margin:0 auto var(--spacing-xl);max-width:100%}.hero-animation{display:none}.cta-buttons{justify-content:center;gap:var(--spacing-md);width:100%}.cta-buttons .btn{width:100%;max-width:300px}}
+    
+    @media (max-width:576px){.hero-figure{width:200px;height:200px;right:-60px;opacity:0.2}.hero h1{font-size:2.4rem}.hero p{font-size:1rem}.hero .container{padding:var(--spacing-md)}}
+     /* Animation keyframes for floating */
+   @keyframes float-animation-y{0%{transform:translateX(-50%) rotate(20deg) translateY(0)}50%{transform:translateX(-50%) rotate(20deg) translateY(-20px)}100%{transform:translateX(-50%) rotate(20deg) translateY(0)}}@keyframes float-before{0%{transform:rotate(-15deg) translateY(0)}50%{transform:rotate(-15deg) translateY(-20px)}100%{transform:rotate(-15deg) translateY(0)}}@keyframes float-hexagon{0%{transform:rotate(-15deg) translateY(0)}50%{transform:rotate(-15deg) translateY(-20px)}100%{transform:rotate(-15deg) translateY(0)}}.hero-hexagon-shape{display:none}@media(min-width:1025px){.hero-hexagon-shape{display:block;position:absolute;width:180px;height:180px;background-color:var(--color-primary);opacity:.08;clip-path:polygon(25% 0,75% 0,100% 50%,75% 100%,25% 100%,0 50%);top:15%;right:-50px;transform:rotate(-15deg);z-index:0;animation:float-hexagon 7s ease-in-out infinite alternate}.hero-figure{animation:float-animation-y 3s ease-in-out infinite alternate}.hero::before{content:"";position:absolute;width:250px;height:250px;background-color:var(--color-primary);opacity:.08;border-radius:30% 70% 70% 30%/30% 30% 70% 70%;left:-50px;top:100px;transform:rotate(-15deg);z-index:0;animation:float-before 5s ease-in-out infinite alternate}}
+
+    </style>
+    
+    <!-- Preload non-critical CSS -->
+    <link rel="preload" href="/css/animations.css" as="style" onload="this.onload=null;this.rel='stylesheet'">
+    <noscript><link rel="stylesheet" href="/css/animations.css"></noscript>
     
     <!-- Favicons -->
     <link rel="apple-touch-icon" sizes="180x180" href="/images/favicon/apple-touch-icon.png">
@@ -136,62 +171,64 @@
                 <h2>Jouw website, <span class="highlight">stap</span> voor <span class="highlight">stap</span> geregeld</h2>
                 <p class="section-intro">Hieronder zie je precies hoe het proces eruitziet. Duidelijk, snel en zonder gedoe.</p>
                 
-       <style>
-  .timeline-step > h3 {
-    text-align: center;
-  }
-</style>
-
-<div class="timeline-step">
-  <div class="timeline-dot"></div>
-  <div class="timeline-icon">
-    <img src="/images/icons/demo.svg" alt="Demo icon">
-  </div>
-  <h3>Jij vraagt een gratis demo aan</h3>
-  <p>Laat me weten wat je in gedachten hebt: kleuren, stijl, doelen, en wat je bedrijf doet. Op basis daarvan ontwerp ik een eerste demo helemaal gratis en vrijblijvend.</p>
-</div>
-
-<div class="timeline-step">
-  <div class="timeline-dot"></div>
-  <div class="timeline-icon">
-    <img src="/images/icons/demo.svg" alt="Demo icon">
-  </div>
-  <h3>Binnen 1-2 dagen krijg je jouw demo</h3>
-  <p>Je ontvangt snel een eerste ontwerp van jouw website. Vind je het niks? Geen probleem, we stoppen gewoon. Toch enthousiast? Dan gaan we samen verder met de inhoud en eventueel SEO-teksten.</p>
-  <div class="cta-buttons">
-    <a href="/blog/index.html" class="btn btn-primary">Voor meer informatie bekijk onze blogs <span class="arrow">→</span></a>
-  </div>
-</div>
-
-<div class="timeline-step">
-  <div class="timeline-dot"></div>
-  <div class="timeline-icon">
-    <img src="/images/icons/code.svg" alt="Code icon">
-  </div>
-  <h3>Ik bouw je website</h3>
-  <p>Als alles duidelijk is, bouw ik jouw site op maat zonder templates, met snelle en schone code. Meestal staat je site binnen 4 tot 7 dagen online. Extra wensen? Dan bespreken we die vooraf.</p>
-</div>
-
-<div class="timeline-step">
-  <div class="timeline-dot"></div>
-  <div class="timeline-icon">
-    <img src="/images/icons/check.svg" alt="Check icon">
-  </div>
-  <h3>Oplevering & revisies</h3>
-  <p>Je krijgt een unieke, werkende website. Daarna is er ruimte voor aanpassingen zodat alles perfect aansluit bij jouw merk en wensen.</p>
-</div>
-
-<div class="timeline-step">
-  <div class="timeline-dot"></div>
-  <div class="timeline-icon">
-    <img src="/images/icons/seo.svg" alt="SEO icon">
-  </div>
-  <h3>Extra optimalisatie</h3>
-  <p>Wil je extra's zoals betere Google-vindbaarheid, marketingondersteuning of technische optimalisatie? Dan help ik je graag verder.</p>
-</div>
-
+                <div class="timeline-container">
+                    <div class="timeline-bar">
+                        <div class="timeline-progress"></div>
+                    </div>
+                    
+                    <div class="timeline-steps">
+                        <div class="timeline-step">
+                            <div class="timeline-dot"></div>
+                            <div class="timeline-icon">
+                                <img src="/images/icons/chat.svg" alt="Chat icon">
+                            </div>
+                            <h3>Jij vraagt een gratis demo aan</h3>
+                            <p>Laat me weten wat je in gedachten hebt: kleuren, stijl, doelen, en wat je bedrijf doet. Op basis daarvan ontwerp ik een eerste demo helemaal gratis en vrijblijvend. <p>
+                        </div>
+                        
+                        <div class="timeline-step">
+                            <div class="timeline-dot"></div>
+                            <div class="timeline-icon">
+                                <img src="/images/icons/demo.svg" alt="Demo icon">
+                            </div>
+                            <h3>Binnen 1-2 dagen krijg je jouw demo</h3>
+                            <p>Je ontvangt snel een eerste ontwerp van jouw website. Vind je het niks? Geen probleem, we stoppen gewoon. Toch enthousiast? Dan gaan we samen verder met de inhoud en eventueel SEO-teksten.
+</p>
+                            <div class="cta-buttons">
+                                <a href="/blog/index.html" class="btn btn-primary">Voor meer informatie bekijk onze blogs <span class="arrow">→</span></a>
+                            </div>
+                        </div>
+                        
+                        <div class="timeline-step">
+                            <div class="timeline-dot"></div>
+                            <div class="timeline-icon">
+                                <img src="/images/icons/code.svg" alt="Code icon">
+                            </div>
+                            <h3>Ik bouw je website</h3>
+                            <p>Als alles duidelijk is, bouw ik jouw site op maat zonder templates, met snelle en schone code. Meestal staat je site binnen 4 tot 7 dagen online. Extra wensen? Dan bespreken we die vooraf.
+</p>
+                        </div>
+                        
+                        <div class="timeline-step">
+                            <div class="timeline-dot"></div>
+                            <div class="timeline-icon">
+                                <img src="/images/icons/check.svg" alt="Check icon">
+                            </div>
+                            <h3>Oplevering & revisies</h3>
+                            <p>Je krijgt een unieke, werkende website. Daarna is er ruimte voor aanpassingen zodat alles perfect aansluit bij jouw merk en wensen.</p>
+                        </div>
+                        
+                        <div class="timeline-step">
+                            <div class="timeline-dot"></div>
+                            <div class="timeline-icon">
+                                <img src="/images/icons/seo.svg" alt="SEO icon">
+                            </div>
+                            <h3>Extra optimalisatie</h3>
+                            <p>Wil je extra's zoals betere Google-vindbaarheid, marketingondersteuning of technische optimalisatie? Dan help ik je graag verder.</p>
+                        </div>
+                    </div>
                 </div>
-   
+            </div>
         </section>
 
         <section class="why-choose">
