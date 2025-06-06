@@ -22,64 +22,8 @@
   <link rel="icon" type="image/png" sizes="16x16" href="../images/favicon/favicon-16x16.png" />
   <link rel="icon" type="image/x-icon" href="../images/favicon/favicon.ico" />
   <link rel="manifest" href="../site.webmanifest" />
-  
   <style>
     /* Alleen essentiële CSS voor afbeeldingen en lijsten */
-    
-    /* Lazy image styles */
-    .lazy-image {
-      width: 100%;
-      height: auto;
-      border-radius: 8px;
-      box-shadow: 0 4px 15px rgba(0,0,0,0.1);
-      margin: 1rem 0;
-      transition: opacity 0.3s ease;
-      opacity: 0;
-      max-width: 500px;
-      display: block;
-      margin-left: auto;
-      margin-right: auto;
-    }
-    
-    .lazy-image.loaded {
-      opacity: 1;
-    }
-    
-    .lazy-image-container {
-      margin: 1.5rem 0;
-      text-align: center;
-      padding: 0.5rem;
-      background: #f8fafc;
-      border-radius: 12px;
-      border: 1px solid #e2e8f0;
-      display: block;
-      width: auto;
-      margin-left: auto;
-      margin-right: auto;
-      max-width: 520px;
-    }
-    
-    /* Larger image container for pagespeed desktop */
-    .lazy-image-container.large {
-      max-width: 850px;
-      padding: 1rem;
-    }
-    
-    .lazy-image-container.large .lazy-image {
-      max-width: 800px;
-    }
-    
-    /* Medium image container for mobile pagespeed on desktop */
-    .lazy-image-container.medium {
-      max-width: 650px;
-      padding: 0.8rem;
-    }
-    
-    .lazy-image-container.medium .lazy-image {
-      max-width: 600px;
-    }
-    
-    /* Score display styles */
     .score-list {
       background: #f8fafc;
       padding: 1.5rem;
@@ -87,38 +31,12 @@
       border-left: 4px solid #10b981;
       margin: 1rem 0;
     }
-    
     .score-list li {
       font-weight: 600;
       color: #059669;
     }
-    
-    /* Responsive styles */
     @media (max-width: 768px) {
-      .lazy-image {
-        max-width: 100%;
-      }
-      
-      .lazy-image-container {
-        max-width: 100%;
-        margin: 1rem 0;
-      }
-      
-      .lazy-image-container.large {
-        max-width: 100%;
-        padding: 0.5rem;
-      }
-      
-      .lazy-image-container.large .lazy-image {
-        max-width: 100%;
-      }
-      
-      .lazy-image-container.medium {
-        max-width: 100%;
-        padding: 0.4rem;
-      }
-      
-      .lazy-image-container.medium .lazy-image {
+      img.lazy-image {
         max-width: 100%;
       }
     }
@@ -174,22 +92,13 @@
 
           <div class="lazy-image-container large" role="img" aria-labelledby="pagespeed-desktop-caption">
             <picture>
-              <source 
-                data-srcset="../images/pagina-snelheid-inzichten-khcustomweb-desktop-d.webp" 
-                media="(min-width: 768px)" 
-                type="image/webp" 
-              />
-              <source 
-                data-srcset="../images/pagina-snelheid-inzichten-khcustomweb-desktop-m.webp" 
-                media="(max-width: 767px)" 
-                type="image/webp" 
-              />
-              <img 
-                class="lazy-image" 
-                data-src="../images/pagina-snelheid-inzichten-khcustomweb-desktop-d.webp"
-                alt="Pagina snelheidsanalyse van KHCustomWeb desktop met perfecte scores" 
-                id="pagespeed-desktop-caption"
-              />
+              <source srcset="../images/pagina-snelheid-inzichten-khcustomweb-desktop-d.webp" type="image/webp" media="(min-width: 768px)" />
+              <source srcset="../images/pagina-snelheid-inzichten-khcustomweb-desktop-m.webp" type="image/webp" media="(max-width: 767px)" />
+              <img src="../images/pagina-snelheid-inzichten-khcustomweb-desktop-d.webp"
+                   loading="lazy"
+                   class="lazy-image" 
+                   alt="Pagina snelheidsanalyse van KHCustomWeb desktop met perfecte scores" 
+                   id="pagespeed-desktop-caption" />
             </picture>
           </div>
 
@@ -201,33 +110,15 @@
             <li>SEO: 100</li>
           </ul>
 
-          <h3>Belangrijke metrics</h3>
-          <ul role="list" aria-label="Belangrijke prestatiemetrics">
-            <li><strong>First Contentful Paint (FCP):</strong> 0,9s op desktop, 0,2s op mobiel</li>
-            <li><strong>Largest Contentful Paint (LCP):</strong> 1,0s op desktop, 0,2s op mobiel</li>
-            <li><strong>Total Blocking Time (TBT):</strong> 0 ms</li>
-            <li><strong>Cumulative Layout Shift (CLS):</strong> 0.057 op desktop, 0.014 op mobiel</li>
-            <li><strong>Speed Index:</strong> 1,2s op desktop, 0,5s op mobiel</li>
-          </ul>
-
           <div class="lazy-image-container medium" role="img" aria-labelledby="pagespeed-mobile-caption">
             <picture>
-              <source 
-                data-srcset="../images/pagina-snelheid-inzichten-khcustomweb-telefoon-d.webp" 
-                media="(min-width: 768px)" 
-                type="image/webp" 
-              />
-              <source 
-                data-srcset="../images/pagina-snelheid-inzichten-khcustomweb-telefoon-m.webp" 
-                media="(max-width: 767px)" 
-                type="image/webp" 
-              />
-              <img 
-                class="lazy-image" 
-                data-src="../images/pagina-snelheid-inzichten-khcustomweb-telefoon-d.webp"
-                alt="Pagina snelheidsanalyse van KHCustomWeb mobiel met uitstekende prestaties" 
-                id="pagespeed-mobile-caption"
-              />
+              <source srcset="../images/pagina-snelheid-inzichten-khcustomweb-telefoon-d.webp" type="image/webp" media="(min-width: 768px)" />
+              <source srcset="../images/pagina-snelheid-inzichten-khcustomweb-telefoon-m.webp" type="image/webp" media="(max-width: 767px)" />
+              <img src="../images/pagina-snelheid-inzichten-khcustomweb-telefoon-d.webp"
+                   loading="lazy"
+                   class="lazy-image" 
+                   alt="Pagina snelheidsanalyse van KHCustomWeb mobiel met uitstekende prestaties" 
+                   id="pagespeed-mobile-caption" />
             </picture>
           </div>
 
@@ -242,43 +133,31 @@
           <ul role="list" aria-label="Belangrijke SEO onderdelen">
             <li><strong>Pagespeed:</strong> Hoe snel laadt je website? Snelle websites scoren beter in zoekresultaten en bieden een fijne gebruikerservaring.</li>
             <li><strong>Toegankelijkheid:</strong> Is je website makkelijk te gebruiken voor iedereen, ook mensen met een beperking? Denk aan alt-teksten, voldoende contrast en goede navigatie.</li>
-            <li><strong>Mobile-friendliness:</strong> Werkt je site soepel op mobiele apparaten? Dit is tegenwoordig cruciaal voor een goede positie in Google.</li>
-            <li><strong>Technische SEO:</strong> Denk aan correcte HTML-structuur, juiste headers, metadata en snelle serverreacties.</li>
+            <li><strong>Mobile‑friendliness:</strong> Werkt je site soepel op mobiele apparaten? Dit is tegenwoordig cruciaal voor een goede positie in Google.</li>
+            <li><strong>Technische SEO:</strong> Denk aan correcte HTML‑structuur, juiste headers, metadata en snelle serverreacties.</li>
           </ul>
 
           <h3>Wat betekenen de scores?</h3>
-          <p><strong>90-100:</strong> Uitstekend! Je website is technisch zeer goed geoptimaliseerd en klaar voor topresultaten.</p>
-          <p><strong>80-89:</strong> Zeer goed. Kleine verbeteringen kunnen de prestaties nog beter maken.</p>
-          <p><strong>60-79:</strong> Goed. Dit is een prima score waar je al een sterke basis hebt. Met wat gerichte optimalisaties haal je eenvoudig hogere scores.</p>
+          <p><strong>90–100:</strong> Uitstekend! Je website is technisch zeer goed geoptimaliseerd en klaar voor topresultaten.</p>
+          <p><strong>80–89:</strong> Zeer goed. Kleine verbeteringen kunnen de prestaties nog beter maken.</p>
+          <p><strong>60–79:</strong> Goed. Dit is een prima score waar je al een sterke basis hebt. Met wat gerichte optimalisaties haal je eenvoudig hogere scores.</p>
           <p><strong>Onder 60:</strong> Er zijn zeker kansen om je site te verbeteren, vooral op het gebied van snelheid en toegankelijkheid.</p>
 
-          <p>Hieronder zie je een voorbeeld van zo'n SEO-score rapport:</p>
-          
           <div class="lazy-image-container" role="img" aria-labelledby="seo-report-caption">
             <picture>
-              <source 
-                data-srcset="../images/seo-raport-khcustomweb-d.webp" 
-                media="(min-width: 768px)" 
-                type="image/webp" 
-              />
-              <source 
-                data-srcset="../images/seo-raport-khcustomweb-m.webp" 
-                media="(max-width: 767px)" 
-                type="image/webp" 
-              />
-              <img 
-                class="lazy-image" 
-                data-src="../images/seo-raport-khcustomweb-d.webp"
-                alt="SEO rapport van KHCustomWeb met perfecte scores voor alle categorieën" 
-                id="seo-report-caption"
-              />
+              <source srcset="../images/seo-raport-khcustomweb-d.webp" type="image/webp" media="(min-width: 768px)" />
+              <source srcset="../images/seo-raport-khcustomweb-m.webp" type="image/webp" media="(max-width: 767px)" />
+              <img src="../images/seo-raport-khcustomweb-d.webp"
+                   loading="lazy"
+                   class="lazy-image" 
+                   alt="SEO rapport van KHCustomWeb met perfecte scores voor alle categorieën" 
+                   id="seo-report-caption" />
             </picture>
           </div>
         </div>
 
         <div class="content-section">
           <h2>Waarom zijn deze cijfers zo belangrijk?</h2>
-
           <h3>Snelle laadtijden verbeteren de gebruikerservaring</h3>
           <p>Niemand houdt ervan om te wachten. Een snelle website zorgt ervoor dat bezoekers direct toegang hebben tot je content, wat bounce rates verlaagt en conversies verhoogt.</p>
 
@@ -294,9 +173,9 @@
           <ul role="list" aria-label="Methoden voor hoge scores">
             <li><strong>Schone en efficiënte code:</strong> Alleen wat nodig is, niets overbodigs.</li>
             <li><strong>Slimme optimalisatie van afbeeldingen:</strong> Automatisch schalen en comprimeren afhankelijk van apparaat.</li>
-            <li><strong>Moderne technieken:</strong> Lazy loading, caching en asynchroon laden van scripts.</li>
-            <li><strong>1,5 seconde laadtijd garantie op desktop:</strong> Behalve als je bijvoorbeeld een grote video als achtergrond wil gebruiken, wat soms iets meer laadtijd kost.</li>
-            <li><strong>Regelmatige audits en updates:</strong> Zo blijf ik altijd up-to-date met de nieuwste standaarden.</li>
+            <li><strong>Moderne technieken:</strong> Lazy loading via `loading="lazy"`, caching en asynchroon laden van scripts.</li>
+            <li><strong>1,5 seconde laadtijd garantie op desktop:</strong> Behalve als je bijvoorbeeld een grote video als achtergrond wilt gebruiken.</li>
+            <li><strong>Regelmatige audits en updates:</strong> Zo blijf ik altijd up‑to‑date met de nieuwste standaarden.</li>
           </ul>
         </div>
 
@@ -319,7 +198,7 @@
         <div class="footer-column">
           <h3>Contact</h3>
           <p>Email: <a href="mailto:kayhuybreghs@icloud.com">kayhuybreghs@icloud.com</a></p>
-          <p>Telefoon: <a href="tel:+31612345678">+31 6 12345678</a></p>
+          <p>Telefoon: <a href="tel:+31612345678">+31 6 12345678</a></p>
           <p>Venlo, Limburg</p>
         </div>
         <div class="footer-column">
@@ -349,47 +228,7 @@
     </div>
   </footer>
 
-  <script>
-    // Lazy loading implementation
-    const lazyImages = document.querySelectorAll('.lazy-image');
-    const imageObserver = new IntersectionObserver((entries, observer) => {
-      entries.forEach(entry => {
-        if (entry.isIntersecting) {
-          const lazyImage = entry.target;
-          const picture = lazyImage.closest('picture');
-          
-          // Load sources
-          picture.querySelectorAll('source[data-srcset]').forEach(source => {
-            source.srcset = source.dataset.srcset;
-            source.removeAttribute('data-srcset');
-          });
-          
-          // Load image
-          if (lazyImage.dataset.src) {
-            lazyImage.src = lazyImage.dataset.src;
-            lazyImage.removeAttribute('data-src');
-          }
-          
-          // Add loaded class for fade-in effect
-          lazyImage.addEventListener('load', () => {
-            lazyImage.classList.add('loaded');
-          });
-          
-          // Stop observing this image
-          observer.unobserve(lazyImage);
-        }
-      });
-    }, {
-      rootMargin: '50px 0px',
-      threshold: 0.01
-    });
-
-    // Start observing all lazy images
-    lazyImages.forEach(image => {
-      imageObserver.observe(image);
-    });
-  </script>
   <script src="/js/cookie-consent.js"></script>
-  <script src="../js/main.js"></script>
+  <script src="../js/main.js" async></script>
 </body>
 </html>
