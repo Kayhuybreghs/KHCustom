@@ -24,56 +24,7 @@
     transform: scale(1.1);
 }
 
-/* Hero background shapes with animations */
-.hero::before {
-    content: '';
-    position: absolute;
-    width: 250px;
-    height: 250px;
-    background-color: var(--color-primary);
-    opacity: 0.08;
-    border-radius: 30% 70% 70% 30% / 30% 30% 70% 70%;
-    left: -50px;
-    top: 100px;
-    transform: rotate(-15deg);
-    z-index: 0;
-    animation: float-animation-y 8s ease-in-out infinite alternate;
-}
 
-.hero-figure {
-    position: absolute;
-    top: 0;
-    left: 50%;
-    width: 200px;
-    height: 200px;
-    background: rgba(255, 107, 0, 0.1);
-    clip-path: polygon(25% 0%, 75% 0%, 100% 50%, 75% 100%, 25% 100%, 0% 50%);
-    z-index: 0;
-    transform: translateX(-50%) rotate(20deg);
-    animation: float-animation-y 6s ease-in-out infinite alternate;
-}
-
-/* New hexagon shape for hero section */
-.hero-hexagon-shape {
-    display: none;
-}
-
-@media (min-width: 1025px) {
-    .hero-hexagon-shape {
-        display: block;
-        position: absolute;
-        width: 180px;
-        height: 180px;
-        background-color: var(--color-primary);
-        opacity: 0.08;
-        clip-path: polygon(25% 0%, 75% 0%, 100% 50%, 75% 100%, 25% 100%, 0% 50%);
-        top: 15%;
-        right: -50px;
-        transform: rotate(-15deg);
-        z-index: 0;
-        animation: float-animation-y 7s ease-in-out infinite alternate;
-    }
-}
 
 /* Animation keyframes for floating */
 @keyframes float-animation-y {
