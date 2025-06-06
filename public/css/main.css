@@ -466,21 +466,6 @@ section > .container {
   pointer-events: none;
 }
 
-/* Hero section shape */
-.hero::before {
-  content: '';
-  position: absolute;
-  width: 250px;
-  height: 250px;
-  background-color: var(--color-primary);
-  opacity: 0.08;
-  border-radius: 30% 70% 70% 30% / 30% 30% 70% 70%;
-  left: -50px;
-  top: 100px;
-  transform: rotate(-15deg);
-  z-index: 0;
-}
-
 /* Process section shapes */
 .process::before {
   content: '';
