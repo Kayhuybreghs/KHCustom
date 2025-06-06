@@ -1,0 +1,12 @@
+User-agent: *
+Allow: /
+
+Sitemap: https://www.khcustomweb.com/sitemap.xml
+
+# Disallow specific files
+Disallow: /*.pdf$
+Disallow: /*.doc$
+Disallow: /*.docx$
+
+# Disallow query strings (e.g., ?utm_source=)
+Disallow: /*?*

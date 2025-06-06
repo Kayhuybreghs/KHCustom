@@ -1,0 +1,233 @@
+/* 404 Error Page Styles */
+.error-section {
+  padding: calc(80px + var(--spacing-xxl)) 0 var(--spacing-xxl);
+  min-height: 80vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.error-content {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: var(--spacing-xxl);
+  align-items: center;
+  margin-bottom: var(--spacing-xxl);
+}
+
+.error-image {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.error-animation {
+  /* Modified animation from the original windmill */
+  position: relative;
+  width: 400px;
+  height: 400px;
+  transform: scale(0.8);
+}
+
+.broken-windmill {
+  position: relative;
+  width: 180px;
+  height: 200px;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%);
+  z-index: 2;
+}
+
+.broken-windmill .pillar {
+  position: absolute;
+  background-image: linear-gradient(335deg, var(--brick-color-2) 6px, transparent 6px), linear-gradient(155deg, var(--brick-color-2) 6px, transparent 6px), linear-gradient(335deg, var(--brick-color-2) 6px, transparent 6px), linear-gradient(155deg, var(--brick-color-2) 6px, transparent 6px);
+  background-size: 15px 15px;
+  background-position: 0 0, 2px 9px, 7px 8px, 9px 1px;
+  background-color: var(--brick-color-1);
+  width: 100%;
+  height: 150px;
+  bottom: 20px;
+  clip-path: polygon(20% 0, 80% 0, 100% 100%, 0 100%);
+  box-shadow: inset 0 4px 0 0 var(--wood-color-1);
+}
+
+.dome.broken {
+  position: absolute;
+  width: 110px;
+  height: 65px;
+  border-radius: 55px 55px 0 0;
+  background: var(--dome-color);
+  left: 50%;
+  top: -45px;
+  transform: translateX(-50%) rotate(-15deg);
+  box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.2);
+}
+
+.dome-window {
+  position: absolute;
+  width: 24px;
+  height: 26px;
+  border-radius: 12px 12px 0 0;
+  background: linear-gradient(to right, transparent 8px, var(--window-color-1) 8px, var(--window-color-1) 10px, transparent 10px), linear-gradient(to bottom, transparent 9px, var(--window-color-1) 9px, var(--window-color-1) 11px, transparent 11px), var(--window-color-2);
+  border: 3px solid var(--window-color-1);
+  bottom: 10px;
+  left: 50%;
+  transform: translateX(-50%);
+}
+
+.blades.broken {
+  position: absolute;
+  z-index: -1;
+  left: 40%;
+  top: -25px;
+  transform: rotate(20deg);
+  width: 20px;
+  height: 20px;
+  border-radius: 50%;
+  background: var(--wood-color-3);
+  animation: none;
+}
+
+.blade.broken {
+  background: var(--blade-color-1);
+  box-shadow: 0 5px 0 0 var(--blade-color-2), 0 -5px 0 0 var(--blade-color-2);
+  transform-origin: -50px 15px;
+}
+
+.blade-1.broken {
+  position: absolute;
+  height: 40px;
+  width: 140px;
+  top: -5px;
+  left: 30px;
+  transform: rotate(-25deg);
+}
+
+.blade-2.broken {
+  position: absolute;
+  height: 20px;
+  width: 80px;
+  top: 20px;
+  left: -40px;
+  transform: rotate(70deg);
+}
+
+.blade-3.broken {
+  display: none;
+}
+
+.blade-4.broken {
+  position: absolute;
+  height: 30px;
+  width: 100px;
+  top: -30px;
+  left: -60px;
+  transform: rotate(170deg);
+}
+
+.error-text {
+  text-align: left;
+}
+
+.error-text h1 {
+  font-size: 2.5rem;
+  margin-bottom: var(--spacing-md);
+}
+
+.error-text p {
+  font-size: 1.125rem;
+  color: var(--color-dark-2);
+  margin-bottom: var(--spacing-lg);
+}
+
+.error-actions {
+  display: flex;
+  gap: var(--spacing-md);
+  flex-wrap: wrap;
+}
+
+.helpful-links {
+  background-color: var(--color-light-2);
+  padding: var(--spacing-xl);
+  border-radius: var(--border-radius-lg);
+  box-shadow: var(--shadow-md);
+}
+
+.helpful-links h2 {
+  font-size: 1.25rem;
+  margin-bottom: var(--spacing-md);
+}
+
+.helpful-links ul {
+  list-style-type: disc;
+  padding-left: var(--spacing-xl);
+}
+
+.helpful-links li {
+  margin-bottom: var(--spacing-sm);
+}
+
+.helpful-links a {
+  font-weight: 500;
+}
+
+/* Broken windmill animation */
+@keyframes sway {
+  0% {
+    transform: rotate(-5deg);
+  }
+  50% {
+    transform: rotate(5deg);
+  }
+  100% {
+    transform: rotate(-5deg);
+  }
+}
+
+.broken-windmill {
+  animation: sway 5s ease-in-out infinite;
+}
+
+/* Responsive */
+@media (max-width: 1024px) {
+  .error-content {
+    grid-template-columns: 1fr;
+    gap: var(--spacing-lg);
+  }
+  
+  .error-image {
+    order: 1;
+  }
+  
+  .error-text {
+    order: 2;
+    text-align: center;
+  }
+  
+  .error-actions {
+    justify-content: center;
+  }
+}
+
+@media (max-width: 576px) {
+  .error-text h1 {
+    font-size: 2rem;
+  }
+  
+  .error-animation {
+    transform: scale(0.6);
+  }
+  
+  .helpful-links ul {
+    padding-left: var(--spacing-lg);
+  }
+  
+  .error-actions {
+    flex-direction: column;
+  }
+  
+  .error-actions .btn {
+    width: 100%;
+  }
+}
