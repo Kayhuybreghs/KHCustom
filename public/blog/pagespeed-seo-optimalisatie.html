@@ -21,6 +21,31 @@
   <link rel="icon" type="image/png" sizes="16x16" href="/images/favicon/favicon-16x16.png" />
   <link rel="icon" type="image/x-icon" href="/images/favicon/favicon.ico" />
   <link rel="manifest" href="/site.webmanifest" />
+
+  <head>
+  <!-- jouw bestaande head content... -->
+  
+  <style>
+    /* Stijlen voor grotere en mooiere afbeeldingen */
+    .blog-post img {
+      width: 100%;       /* vult de container */
+      max-width: 800px;  /* maximaal 800px breed voor desktop */
+      height: auto;      /* hoogte proportioneel */
+      display: block;
+      margin: 1.5rem auto; /* ruimte boven en onder, en centreren */
+      border-radius: 8px;  /* ronde hoeken voor nettere uitstraling */
+      box-shadow: 0 4px 10px rgba(0,0,0,0.1); /* subtiele schaduw */
+    }
+
+    /* Container voor afbeeldingen centreren */
+    .content-section div[role="img"] {
+      text-align: center; /* centreren van de afbeelding */
+      margin-bottom: 2rem;
+    }
+  </style>
+</head>
+
+
 </head>
 <body>
   <header id="site-header">
