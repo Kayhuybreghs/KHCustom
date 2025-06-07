@@ -4,18 +4,18 @@ document.addEventListener('DOMContentLoaded', function() {
     const filterBarContainer = document.querySelector('.filter-bar');
     const postsPerPage = 9;
 
-  // Helper function to parse Dutch date strings
-function parseDutchDate(dateString) {
-const parts = dateString.split(' ');
-const day = parseInt(parts[0]);
-const monthNames = {
-'januari': 0, 'februari': 1, 'maart': 2, 'april': 3, 'mei': 4, 'juni': 5,
-'juli': 6, 'augustus': 7, 'september': 8, 'oktober': 9, 'november': 10, 'december': 11
-};
-const month = monthNames[parts[1].toLowerCase()];
-const year = parseInt(parts[2]);
-return new Date(year, month, day);
-}
+    // Helper function to parse Dutch date strings
+    function parseDutchDate(dateString) {
+        const parts = dateString.split(' ');
+        const day = parseInt(parts[0]);
+        const monthNames = {
+            'januari': 0, 'februari': 1, 'maart': 2, 'april': 3, 'mei': 4, 'juni': 5,
+            'juli': 6, 'augustus': 7, 'september': 8, 'oktober': 9, 'november': 10, 'december': 11
+        };
+        const month = monthNames[parts[1].toLowerCase()];
+        const year = parseInt(parts[2]);
+        return new Date(year, month, day);
+    }
 
     // All blog posts data
     const blogPosts = [
@@ -166,14 +166,14 @@ return new Date(year, month, day);
             description: "Ontdek of onze hosting en onderhoudsdienst bij jou past.",
             link: "hosting-onderhoudsdienst-khcustomweb.html"
         },
-          {
+        {
             category: "Techniek & Performance",
             title: "Waarom een Top Pagespeed en SEO Score Cruciaal Zijn — KHCustomWeb",
             date: "5 juni 2025",
             description: "Ontdek waarom een hoge pagespeed en SEO-score essentieel zijn voor jouw website. KHCustomWeb in Venlo legt uit hoe je met slimme optimalisaties sneller, toegankelijker en beter vindbaar wordt.",
             link: "pagespeed-seo-optimalisatie.html"
         },
-      {
+        {
             category: "Algemeen / Over KHCustomWeb",
             title: "Voor Wie is KHCustomWeb? En Waarom Niet Voor Iedereen",
             date: "6 juni 2025",
@@ -182,10 +182,13 @@ return new Date(year, month, day);
         }
     ];
 
+    // Sort blog posts from newest to oldest
+    blogPosts.sort((a, b) => parseDutchDate(b.date) - parseDutchDate(a.date));
+
     // Get unique categories and count posts per category
     function getCategoriesWithCounts() {
         const categories = {};
-        
+
         // Count posts per category
         blogPosts.forEach(post => {
             if (!categories[post.category]) {
@@ -193,7 +196,7 @@ return new Date(year, month, day);
             }
             categories[post.category]++;
         });
-        
+
         // Convert to array of objects for easier handling
         return Object.entries(categories).map(([name, count]) => ({ name, count }));
     }
@@ -202,10 +205,10 @@ return new Date(year, month, day);
     function createFilterButtons() {
         // Clear existing buttons
         filterBarContainer.innerHTML = '';
-        
+
         // Get categories with counts
         const categories = getCategoriesWithCounts();
-        
+
         // Add "All" button
         const allButton = document.createElement('button');
         allButton.className = 'filter-button active';
@@ -216,7 +219,7 @@ return new Date(year, month, day);
         `;
         allButton.addEventListener('click', () => filterPosts('all'));
         filterBarContainer.appendChild(allButton);
-        
+
         // Add category buttons
         categories.forEach(category => {
             const button = document.createElement('button');
@@ -243,7 +246,7 @@ return new Date(year, month, day);
                 btn.classList.add('active');
             }
         });
-        
+
         // Filter posts
         currentCategory = category;
         if (category === 'all') {
@@ -251,11 +254,11 @@ return new Date(year, month, day);
         } else {
             filteredPosts = blogPosts.filter(post => post.category === category);
         }
-        
+
         // Recalculate pagination and show first page
         createPagination();
         showPage(1);
-        
+
         // Smooth scroll to top of blog section
         document.querySelector('.blog-section').scrollIntoView({ behavior: 'smooth' });
     }
@@ -269,7 +272,7 @@ return new Date(year, month, day);
     function createPagination() {
         paginationContainer.innerHTML = '';
         const totalPages = getTotalPages();
-        
+
         for (let i = 1; i <= totalPages; i++) {
             const button = document.createElement('button');
             button.className = `pagination-button ${i === 1 ? 'active' : ''}`;
@@ -287,7 +290,7 @@ return new Date(year, month, day);
             });
             paginationContainer.appendChild(button);
         }
-        
+
         // Hide pagination if only one page
         if (totalPages <= 1) {
             paginationContainer.style.display = 'none';
@@ -312,11 +315,11 @@ return new Date(year, month, day);
 
         // Fade out current posts
         blogGrid.style.opacity = '0';
-        
+
         setTimeout(() => {
             // Clear and populate blog grid
             blogGrid.innerHTML = '';
-            
+
             if (pageItems.length === 0) {
                 // Show "no posts found" message
                 const noPostsMessage = document.createElement('div');
@@ -348,16 +351,16 @@ return new Date(year, month, day);
                         </div>
                     `;
                     blogGrid.appendChild(article);
-                    
+
                     // Trigger reflow
                     article.offsetHeight;
-                    
+
                     // Fade in new posts
                     article.style.opacity = '1';
                     article.style.transform = 'translateY(0)';
                 });
             }
-            
+
             blogGrid.style.opacity = '1';
         }, 300);
     }
