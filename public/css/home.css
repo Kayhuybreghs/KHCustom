@@ -212,7 +212,7 @@
     margin: 0 auto;
     padding: var(--spacing-md) 0;
 }
-
+ 
 .timeline-bar {
     position: absolute;
     left: 50%;
@@ -228,10 +228,9 @@
     left: 0;
     top: 0;
     width: 100%;
-    transform: scaleY(0);
-    transform-origin: top;
+    height: 0;
     background: var(--color-primary);
-    transition: transform 0.3s ease;
+    transition: height 0.3s ease;
 }
 
 /* Mobile timeline progress */
