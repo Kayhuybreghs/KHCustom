@@ -4,6 +4,19 @@ document.addEventListener('DOMContentLoaded', function() {
     const filterBarContainer = document.querySelector('.filter-bar');
     const postsPerPage = 9;
 
+  // Helper function to parse Dutch date strings
+function parseDutchDate(dateString) {
+const parts = dateString.split(' ');
+const day = parseInt(parts[0]);
+const monthNames = {
+'januari': 0, 'februari': 1, 'maart': 2, 'april': 3, 'mei': 4, 'juni': 5,
+'juli': 6, 'augustus': 7, 'september': 8, 'oktober': 9, 'november': 10, 'december': 11
+};
+const month = monthNames[parts[1].toLowerCase()];
+const year = parseInt(parts[2]);
+return new Date(year, month, day);
+}
+
     // All blog posts data
     const blogPosts = [
         {
