@@ -28,7 +28,7 @@
     .animate-on-scroll{opacity:0;transform:translateY(20px);transition:opacity var(--animation-duration) var(--animation-timing),transform var(--animation-duration) var(--animation-timing);will-change:opacity,transform}.animate-on-scroll.visible{opacity:1;transform:translateY(0)}@media (hover:none) and (pointer:coarse){.animate-on-scroll{transform:translateY(30px)}.animate-on-scroll.visible{transform:translateY(0)}}@media (hover:none){.demo-feature:hover,.timeline-step:hover,.feature:hover,.tech-item:hover,.social-link:hover{transform:none}}
     
     *{box-sizing:border-box;margin:0;padding:0}html{font-size:var(--font-size-base);scroll-behavior:smooth}body{font-family:var(--font-family);line-height:var(--line-height-body);color:var(--color-dark);background-color:var(--color-light);overflow-x:hidden}img{max-width:100%;height:auto;display:block}a{color:var(--color-primary);text-decoration:none;transition:color var(--transition-fast)}a:hover{color:var(--color-primary-dark)}ul,ol{list-style:none}
-    
+     
     h1,h2,h3,h4,h5,h6{margin:0 0 var(--spacing-md);font-weight:700;line-height:var(--line-height-heading);color:var(--color-dark)}h1{font-size:2.5rem;margin-bottom:var(--spacing-lg)}h2{font-size:2rem;margin-bottom:var(--spacing-lg)}h3{font-size:1.5rem}h4{font-size:1.25rem}p{margin-bottom:var(--spacing-md)}
     
     .container{width:100%;max-width:var(--container-max-width);margin:0 auto;padding:0 var(--container-padding)}
@@ -49,12 +49,14 @@
     <!-- Preload non-critical CSS -->
     <link rel="preload" href="/css/animations.css" as="style" onload="this.onload=null;this.rel='stylesheet'">
     <noscript><link rel="stylesheet" href="/css/animations.css"></noscript>
+    
     <!-- Favicons -->
     <link rel="apple-touch-icon" sizes="180x180" href="/images/favicon/apple-touch-icon.png">
     <link rel="icon" type="image/png" sizes="32x32" href="/images/favicon/favicon-32x32.png">
     <link rel="icon" type="image/png" sizes="16x16" href="/images/favicon/favicon-16x16.png">
     <link rel="icon" type="image/x-icon" href="/images/favicon/favicon.ico">
     <link rel="manifest" href="/site.webmanifest">
+
 </head>
 <body>
     <header id="site-header">
