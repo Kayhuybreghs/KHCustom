@@ -29,8 +29,6 @@ let allBlogPosts = Array.from(blogGrid.querySelectorAll('.blog-card')).map(artic
 // Sort blog posts from newest to oldest based on their date attribute
 allBlogPosts.sort((a, b) => parseDutchDate(b.date) - parseDutchDate(a.date));
 
-// Reorder elements in the DOM based on the sorted array
-allBlogPosts.forEach(post => blogGrid.appendChild(post.element));
 
 // Get unique categories and count posts per category from the DOM
 function getCategoriesWithCounts() {
