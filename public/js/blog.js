@@ -219,7 +219,7 @@ document.addEventListener('DOMContentLoaded', function() {
             console.log('Displayed current page posts with fade-in animation.');
         }
     }
-
+});
     // Initialize filter buttons, pagination and show first page
     createFilterButtons();
     createPagination();
