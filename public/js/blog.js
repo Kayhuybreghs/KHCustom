@@ -11,19 +11,6 @@ document.addEventListener('DOMContentLoaded', function() {
         return;
     }
 
-    // Helper function to parse Dutch date strings
-    function parseDutchDate(dateString) {
-        const parts = dateString.split(' ');
-        const day = parseInt(parts[0]);
-        const monthNames = {
-            'januari': 0, 'februari': 1, 'maart': 2, 'april': 3, 'mei': 4, 'juni': 5,
-            'juli': 6, 'augustus': 7, 'september': 8, 'oktober': 9, 'november': 10, 'december': 11
-        };
-        const month = monthNames[parts[1].toLowerCase()];
-        const year = parseInt(parts[2]);
-        return new Date(year, month, day);
-    }
-
     // Get all blog posts from the DOM
     let allBlogPosts = Array.from(blogGrid.querySelectorAll('.blog-card')).map(article => {
         const categoryElement = article.querySelector('.category');
@@ -39,7 +26,8 @@ document.addEventListener('DOMContentLoaded', function() {
     console.log('Initial blog posts found:', allBlogPosts.length);
 
     // Sort blog posts from newest to oldest based on their date attribute
-    allBlogPosts.sort((a, b) => parseDutchDate(b.date) - parseDutchDate(a.date));
+    // Using new Date() directly on the 'datetime' attribute which is in 'YYYY-MM-DD' format
+    allBlogPosts.sort((a, b) => new Date(b.date) - new Date(a.date));
     console.log('Blog posts sorted by date.');
 
     // Get unique categories and count posts per category from the DOM
@@ -219,9 +207,10 @@ document.addEventListener('DOMContentLoaded', function() {
             console.log('Displayed current page posts with fade-in animation.');
         }
     }
-});
+
     // Initialize filter buttons, pagination and show first page
     createFilterButtons();
     createPagination();
     showPage(1);
     console.log('Blog functionality initialized.');
+});
