@@ -122,8 +122,8 @@
   color: var(--color-dark);
 }
 
-.highlight {
-  color: var(--color-primary);
+.oranje {
+  color: #FF6B00;
 }
 
 /* Reduced Motion */
