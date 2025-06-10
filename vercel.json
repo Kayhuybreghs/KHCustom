@@ -11,6 +11,11 @@
       "permanent": true
     },
     {
+      "source": "/projecten-en-tarieven",
+      "destination": "/projecten-tarieven",
+      "permanent": true
+    },
+    {
       "source": "/(.*)",
       "has": [
         {
@@ -20,6 +25,116 @@
       ],
       "destination": "https://www.khcustomweb.nl/$1",
       "permanent": true
+    }
+  ],
+  "rewrites": [
+    {
+      "source": "/contact",
+      "destination": "/contact.html"
+    },
+    {
+      "source": "/projecten-tarieven",
+      "destination": "/projecten-tarieven.html"
+    },
+    {
+      "source": "/404",
+      "destination": "/404.html"
+    },
+    {
+      "source": "/blog",
+      "destination": "/blog/index.html"
+    },
+    {
+      "source": "/blog/betaalbaar-webdesign-venlo-gratis-demo",
+      "destination": "/blog/betaalbaar-webdesign-venlo-gratis-demo.html"
+    },
+    {
+      "source": "/blog/bloggen-marketing-ondernemers",
+      "destination": "/blog/bloggen-marketing-ondernemers.html"
+    },
+    {
+      "source": "/blog/call-to-action-website",
+      "destination": "/blog/call-to-action-website.html"
+    },
+    {
+      "source": "/blog/copywriting-websites-converteren",
+      "destination": "/blog/copywriting-websites-converteren.html"
+    },
+    {
+      "source": "/blog/goede-homepage-kenmerken",
+      "destination": "/blog/goede-homepage-kenmerken.html"
+    },
+    {
+      "source": "/blog/hoe-khcustomweb-webdesign-verandert",
+      "destination": "/blog/hoe-khcustomweb-webdesign-verandert.html"
+    },
+    {
+      "source": "/blog/hosting-onderhoudsdienst-khcustomweb",
+      "destination": "/blog/hosting-onderhoudsdienst-khcustomweb.html"
+    },
+    {
+      "source": "/blog/lokale-seo-venlo-klanten",
+      "destination": "/blog/lokale-seo-venlo-klanten.html"
+    },
+    {
+      "source": "/blog/pagespeed-seo-optimalisatie",
+      "destination": "/blog/pagespeed-seo-optimalisatie.html"
+    },
+    {
+      "source": "/blog/persoonlijke-aanpak-webdesign",
+      "destination": "/blog/persoonlijke-aanpak-webdesign.html"
+    },
+    {
+      "source": "/blog/professionele-website-venlo",
+      "destination": "/blog/professionele-website-venlo.html"
+    },
+    {
+      "source": "/blog/seo-fouten-venlo-klanten-missen",
+      "destination": "/blog/seo-fouten-venlo-klanten-missen.html"
+    },
+    {
+      "source": "/blog/seo-tips-2025",
+      "destination": "/blog/seo-tips-2025.html"
+    },
+    {
+      "source": "/blog/snelle-website-meer-opbrengst-dan-reclame",
+      "destination": "/blog/snelle-website-meer-opbrengst-dan-reclame.html"
+    },
+    {
+      "source": "/blog/waarom-geen-templates-gebruiken",
+      "destination": "/blog/waarom-geen-templates-gebruiken.html"
+    },
+    {
+      "source": "/blog/waarom-website-laten-maken-khcustomweb-venlo",
+      "destination": "/blog/waarom-website-laten-maken-khcustomweb-venlo.html"
+    },
+    {
+      "source": "/blog/wat-kost-een-website-echt",
+      "destination": "/blog/wat-kost-een-website-echt.html"
+    },
+    {
+      "source": "/blog/webdesign-fouten-ondernemers",
+      "destination": "/blog/webdesign-fouten-ondernemers.html"
+    },
+    {
+      "source": "/blog/website-bouwen-2025",
+      "destination": "/blog/website-bouwen-2025.html"
+    },
+    {
+      "source": "/blog/website-past-bij-jouw-branche",
+      "destination": "/blog/website-past-bij-jouw-branche.html"
+    },
+    {
+      "source": "/blog/website-snelheid-2-seconden",
+      "destination": "/blog/website-snelheid-2-seconden.html"
+    },
+    {
+      "source": "/blog/website-venlo-google-scoren-oplossen",
+      "destination": "/blog/website-venlo-google-scoren-oplossen.html"
+    },
+    {
+      "source": "/blog/voor-wie-khcustomweb",
+      "destination": "/blog/voor-wie-khcustomweb.html"
     }
   ],
   "headers": [
