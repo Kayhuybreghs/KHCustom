@@ -6,13 +6,13 @@
       "permanent": true
     },
     {
-      "source": "/privacy",
-      "destination": "/privacy.html",
+      "source": "/privacy.html",
+      "destination": "/privacy",
       "permanent": true
     },
     {
-      "source": "/projecten-tarieven",
-      "destination": "/projecten-tarieven.html",
+      "source": "/projecten-tarieven.html",
+      "destination": "/projecten-tarieven",
       "permanent": true
     },
     {
@@ -35,6 +35,10 @@
     {
       "source": "/projecten-tarieven",
       "destination": "/projecten-tarieven.html"
+    },
+    {
+      "source": "/privacy",
+      "destination": "/privacy.html"
     },
     {
       "source": "/404",
