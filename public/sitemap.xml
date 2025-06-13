@@ -10,13 +10,13 @@
 
   <!-- Echte pagina's -->
   <url>
-    <loc>https://www.khcustomweb.nl/projecten-tarieven.html</loc>
+    <loc>https://www.khcustomweb.nl/projecten-tarieven</loc>
     <lastmod>2025-06-01</lastmod>
     <changefreq>yearly</changefreq>
     <priority>0.8</priority> 
   </url>
   <url>
-    <loc>https://www.khcustomweb.nl/contact.html</loc>
+    <loc>https://www.khcustomweb.nl/contact</loc>
     <lastmod>2025-06-01</lastmod>
     <changefreq>yearly</changefreq>
     <priority>0.8</priority> 
@@ -24,7 +24,7 @@
 
   <!-- Privacy -->
   <url>
-    <loc>https://www.khcustomweb.nl/privacy.html</loc>
+    <loc>https://www.khcustomweb.nl/privacy</loc>
     <lastmod>2025-06-01</lastmod>
     <changefreq>yearly</changefreq>
     <priority>0.4</priority> 
@@ -32,7 +32,7 @@
 
   <!-- Blog index -->
   <url>
-    <loc>https://www.khcustomweb.nl/blog/index.html</loc>
+    <loc>https://www.khcustomweb.nl/blog</loc>
     <lastmod>2025-06-01</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.9</priority> 
@@ -40,133 +40,133 @@
 
   <!-- Blog posts -->
   <url>
-    <loc>https://www.khcustomweb.nl/blog/pagespeed-seo-optimalisatie.html</loc>
+    <loc>https://www.khcustomweb.nl/blog/pagespeed-seo-optimalisatie</loc>
     <lastmod>2025-06-01</lastmod>
     <changefreq>never</changefreq>
     <priority>0.7</priority> 
   </url>
   <url>
-    <loc>https://www.khcustomweb.nl/blog/betaalbaar-webdesign-venlo-gratis-demo.html</loc>
+    <loc>https://www.khcustomweb.nl/blog/betaalbaar-webdesign-venlo-gratis-demo</loc>
     <lastmod>2025-05-30</lastmod>
     <changefreq>never</changefreq>
     <priority>0.7</priority>
   </url>
   <url>
-    <loc>https://www.khcustomweb.nl/blog/bloggen-marketing-ondernemers.html</loc>
+    <loc>https://www.khcustomweb.nl/blog/bloggen-marketing-ondernemers</loc>
     <lastmod>2025-05-30</lastmod>
     <changefreq>never</changefreq>
     <priority>0.7</priority>
   </url>
   <url>
-    <loc>https://www.khcustomweb.nl/blog/call-to-action-website.html</loc>
+    <loc>https://www.khcustomweb.nl/blog/call-to-action-website</loc>
     <lastmod>2025-05-30</lastmod>
     <changefreq>never</changefreq>
     <priority>0.7</priority>
   </url>
   <url>
-    <loc>https://www.khcustomweb.nl/blog/copywriting-websites-converteren.html</loc>
+    <loc>https://www.khcustomweb.nl/blog/copywriting-websites-converteren</loc>
     <lastmod>2025-05-30</lastmod>
     <changefreq>never</changefreq>
     <priority>0.7</priority>
   </url>
   <url>
-    <loc>https://www.khcustomweb.nl/blog/goede-homepage-kenmerken.html</loc>
+    <loc>https://www.khcustomweb.nl/blog/goede-homepage-kenmerken</loc>
     <lastmod>2025-05-30</lastmod>
     <changefreq>never</changefreq>
     <priority>0.7</priority>
   </url>
   <url>
-    <loc>https://www.khcustomweb.nl/blog/hoe-khcustomweb-webdesign-verandert.html</loc>
+    <loc>https://www.khcustomweb.nl/blog/hoe-khcustomweb-webdesign-verandert</loc>
     <lastmod>2025-05-30</lastmod>
     <changefreq>never</changefreq>
     <priority>0.7</priority>
   </url>
   <url>
-    <loc>https://www.khcustomweb.nl/blog/hosting-onderhoudsdienst-khcustomweb.html</loc>
+    <loc>https://www.khcustomweb.nl/blog/hosting-onderhoudsdienst-khcustomweb</loc>
     <lastmod>2025-05-30</lastmod>
     <changefreq>never</changefreq>
     <priority>0.7</priority>
   </url>
   <url>
-    <loc>https://www.khcustomweb.nl/blog/lokale-seo-venlo-klanten.html</loc>
+    <loc>https://www.khcustomweb.nl/blog/lokale-seo-venlo-klanten</loc>
     <lastmod>2025-05-30</lastmod>
     <changefreq>never</changefreq>
     <priority>0.7</priority>
   </url>
   <url>
-    <loc>https://www.khcustomweb.nl/blog/persoonlijke-aanpak-webdesign.html</loc>
+    <loc>https://www.khcustomweb.nl/blog/persoonlijke-aanpak-webdesign</loc>
     <lastmod>2025-05-30</lastmod>
     <changefreq>never</changefreq>
     <priority>0.7</priority>
   </url>
   <url>
-    <loc>https://www.khcustomweb.nl/blog/professionele-website-venlo.html</loc>
+    <loc>https://www.khcustomweb.nl/blog/professionele-website-venlo</loc>
     <lastmod>2025-05-30</lastmod>
     <changefreq>never</changefreq>
     <priority>0.7</priority>
   </url>
   <url>
-    <loc>https://www.khcustomweb.nl/blog/seo-fouten-venlo-klanten-missen.html</loc>
+    <loc>https://www.khcustomweb.nl/blog/seo-fouten-venlo-klanten-missen</loc>
     <lastmod>2025-05-30</lastmod>
     <changefreq>never</changefreq>
     <priority>0.7</priority>
   </url>
   <url>
-    <loc>https://www.khcustomweb.nl/blog/seo-tips-2025.html</loc>
+    <loc>https://www.khcustomweb.nl/blog/seo-tips-2025</loc>
     <lastmod>2025-05-30</lastmod>
     <changefreq>never</changefreq>
     <priority>0.7</priority>
   </url>
   <url>
-    <loc>https://www.khcustomweb.nl/blog/snelle-website-meer-opbrengst-dan-reclame.html</loc>
+    <loc>https://www.khcustomweb.nl/blog/snelle-website-meer-opbrengst-dan-reclame</loc>
     <lastmod>2025-05-30</lastmod>
     <changefreq>never</changefreq>
     <priority>0.7</priority>
   </url>
   <url>
-    <loc>https://www.khcustomweb.nl/blog/waarom-geen-templates-gebruiken.html</loc>
+    <loc>https://www.khcustomweb.nl/blog/waarom-geen-templates-gebruiken</loc>
     <lastmod>2025-05-30</lastmod>
     <changefreq>never</changefreq>
     <priority>0.7</priority>
   </url>
   <url>
-    <loc>https://www.khcustomweb.nl/blog/waarom-website-laten-maken-khcustomweb-venlo.html</loc>
+    <loc>https://www.khcustomweb.nl/blog/waarom-website-laten-maken-khcustomweb-venlo</loc>
     <lastmod>2025-05-30</lastmod>
     <changefreq>never</changefreq>
     <priority>0.7</priority>
   </url>
   <url>
-    <loc>https://www.khcustomweb.nl/blog/wat-kost-een-website-echt.html</loc>
+    <loc>https://www.khcustomweb.nl/blog/wat-kost-een-website-echt</loc>
     <lastmod>2025-05-30</lastmod>
     <changefreq>never</changefreq>
     <priority>0.7</priority>
   </url>
   <url>
-    <loc>https://www.khcustomweb.nl/blog/website-bouwen-2025.html</loc>
+    <loc>https://www.khcustomweb.nl/blog/website-bouwen-2025</loc>
     <lastmod>2025-05-30</lastmod>
     <changefreq>never</changefreq>
     <priority>0.7</priority>
   </url>
   <url>
-    <loc>https://www.khcustomweb.nl/blog/website-past-bij-jouw-branche.html</loc>
+    <loc>https://www.khcustomweb.nl/blog/website-past-bij-jouw-branche</loc>
     <lastmod>2025-05-30</lastmod>
     <changefreq>never</changefreq>
     <priority>0.7</priority>
   </url>
   <url>
-    <loc>https://www.khcustomweb.nl/blog/website-snelheid-2-seconden.html</loc>
+    <loc>https://www.khcustomweb.nl/blog/website-snelheid-2-seconden</loc>
     <lastmod>2025-05-30</lastmod>
     <changefreq>never</changefreq>
     <priority>0.7</priority>
   </url>
   <url>
-    <loc>https://www.khcustomweb.nl/blog/website-venlo-google-scoren-oplossen.html</loc>
+    <loc>https://www.khcustomweb.nl/blog/website-venlo-google-scoren-oplossen</loc>
     <lastmod>2025-05-30</lastmod>
     <changefreq>never</changefreq>
     <priority>0.7</priority>
   </url>
   <url>
-    <loc>https://www.khcustomweb.nl/blog/webdesign-fouten-ondernemers.html</loc>
+    <loc>https://www.khcustomweb.nl/blog/webdesign-fouten-ondernemers</loc>
     <lastmod>2025-05-30</lastmod>
     <changefreq>never</changefreq>
     <priority>0.7</priority>
