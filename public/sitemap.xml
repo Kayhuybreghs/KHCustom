@@ -31,6 +31,7 @@
   </url>
 
   <!-- Blog index -->
+  
   <url>
     <loc>https://www.khcustomweb.nl/blog/index.html</loc>
     <lastmod>2025-06-01</lastmod>
@@ -39,6 +40,12 @@
   </url>
 
   <!-- Blog posts -->
+    <url>
+    <loc>https://www.khcustomweb.nl/blog/lokaal-webdesign-roermond.html</loc>
+    <lastmod>2025-06-14</lastmod>
+    <changefreq>never</changefreq>
+    <priority>0.7</priority> 
+  </url>
   <url>
     <loc>https://www.khcustomweb.nl/blog/pagespeed-seo-optimalisatie.html</loc>
     <lastmod>2025-06-01</lastmod>
