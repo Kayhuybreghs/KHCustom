@@ -466,4 +466,12 @@
 
 .logo-design-block {
     text-align: center;
+  display: flex;
+flex-direction: column;
+align-items: center;
+  }
+.content-image {
+display: block;
+margin: 0 auto;
+
 }
