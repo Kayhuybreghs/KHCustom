@@ -1,3 +1,4 @@
+// public/js/blog.js
 document.addEventListener('DOMContentLoaded', function() {
     console.log('DOM fully loaded and parsed.');
 
@@ -160,12 +161,8 @@ document.addEventListener('DOMContentLoaded', function() {
         const start = (pageNumber - 1) * postsPerPage;
         const end = start + postsPerPage;
 
-        // Hide all posts first
-        allBlogPosts.forEach(post => {
-            post.element.style.display = 'none';
-            post.element.classList.remove('fade-in'); // Remove animation class for re-use
-        });
-        console.log('All posts hidden.');
+        // Clear the current content of the blog grid
+        blogGrid.innerHTML = ''; // <--- ADDED THIS LINE
 
         // Update active pagination button
         document.querySelectorAll('.pagination-button').forEach(btn => {
@@ -198,7 +195,8 @@ document.addEventListener('DOMContentLoaded', function() {
             console.log('Displayed "no posts" message.');
         } else {
             postsToShow.forEach((post, index) => {
-                post.element.style.display = 'block'; // Make it visible
+                blogGrid.appendChild(post.element); // <--- MODIFIED THIS LINE
+                post.element.style.display = 'block'; // Ensure it's visible
                 // Trigger reflow to restart animation
                 void post.element.offsetWidth;
                 post.element.classList.add('fade-in'); // Add animation class
